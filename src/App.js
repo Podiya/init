@@ -115,7 +115,7 @@ function Logs() {
                   <CardBody>
                     <CardTitle tag="h6">{log.url}</CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">{log.status}</CardSubtitle>
-                    <CardText>{JSON.stringify(log.response)}</CardText>
+                    <CardText><pre>{JSON.stringify(log.response, undefined, 2)}</pre></CardText>
                   </CardBody>
                 </Card>
               </Col>
